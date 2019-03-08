@@ -14,7 +14,9 @@ RUN apt-add-repository ppa:openjdk-r/ppa
 RUN apt-get update
 RUN apt-get -y install openjdk-8-jdk
 
-RUN apt-get -y install mkisofs git python bc libssl-dev
+RUN apt-get -y install mkisofs git python bc libssl-dev repo
+RUN apt-get -y install vim bsdmainutils
 
 ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64/
+ENV USER root
 
